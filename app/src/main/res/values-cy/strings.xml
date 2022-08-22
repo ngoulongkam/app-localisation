@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">welsh app-localisation</string>
+    <string name="hello_world">welsh hello world</string>
+    <string name="system_locale">welsh System language</string>
+    <string name="screen_title">Welsh Title</string>
+    <string name="button_text">Welsh Show Dialog</string>
+    <string name="dialog_title">Welsh title</string>
+    <string name="dialog_text">Dialog text in Welsh</string>
+</resources>

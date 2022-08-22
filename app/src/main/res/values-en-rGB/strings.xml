@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">app-localisation</string>
+    <string name="hello_world">hello world</string>
+    <string name="system_locale">System language</string>
+    <string name="screen_title">Title</string>
+</resources>
