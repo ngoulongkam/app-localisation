@@ -7,4 +7,7 @@
     <string name="button_text">Show Dialog</string>
     <string name="dialog_title">English title</string>
     <string name="dialog_text">Dialog text in English</string>
+    <string name="switch_text">Switch</string>
+    <string name="forced_english">Forced in English</string>
+    <string name="both_language">This Fragment show both language</string>
 </resources>

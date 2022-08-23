@@ -7,4 +7,7 @@
     <string name="button_text">Welsh Show Dialog</string>
     <string name="dialog_title">Welsh title</string>
     <string name="dialog_text">Dialog text in Welsh</string>
+    <string name="switch_text">Switch in Welsh</string>
+    <string name="forced_english">Welsh, but this should not be displayed</string>
+    <string name="both_language">This Fragment show both language Welsh</string>
 </resources>

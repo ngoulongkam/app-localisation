@@ -12,6 +12,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.os.LocaleListCompat
+import androidx.fragment.app.Fragment
 
 @RequiresApi(Build.VERSION_CODES.TIRAMISU)
 class MainActivity : AppCompatActivity() {
@@ -35,6 +36,16 @@ class MainActivity : AppCompatActivity() {
                 setMessage(getString(R.string.dialog_text))
                 show()
             }
+        }
+
+        val switchButton = findViewById<Button>(R.id.switch_fragment_button)
+        switchButton.setOnClickListener {
+            loadFragment(OneFragment())
+        }
+
+        val switchTwoButton = findViewById<Button>(R.id.switch_fragment_two_button)
+        switchTwoButton.setOnClickListener {
+            loadFragment(TwoFragment())
         }
     }
 
@@ -75,5 +86,12 @@ class MainActivity : AppCompatActivity() {
     private fun updateAppLocales(locales: String) {
         val appLocale: LocaleListCompat = LocaleListCompat.forLanguageTags(locales)
         AppCompatDelegate.setApplicationLocales(appLocale)
+    }
+
+    private fun loadFragment(fragment: Fragment) {
+        val fm = supportFragmentManager
+        val fragmentTransaction = fm.beginTransaction()
+        fragmentTransaction.replace(R.id.frame, fragment)
+        fragmentTransaction.commit()
     }
 }
